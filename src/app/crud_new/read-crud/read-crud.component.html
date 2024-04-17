@@ -1,0 +1,45 @@
+<div class="user-container">
+    <div class="form-container">
+      <form action="" class="form__update">
+        <input type="text" class="update__input" name="name_update" [(ngModel)]="name_update" />
+        <button class="update__subm" (click)="ngOnInit()">Buscar usuario</button>
+      </form>
+    </div>
+  
+    <div class="data-container">
+      <div *ngIf="usuario">
+        <p>ID: {{ usuario.id }}</p>
+        <p>Nombre: {{ usuario.name }}</p>
+        <p>Username: {{ usuario.username }}</p>
+        <p>Email: {{ usuario.email }}</p>
+        <p>Password: {{ usuario.password }}</p>
+        <button (click)="delete_user()">Eliminar</button>
+        <button (click)="showUpdateForm = true" >Actualizar</button>
+      </div>
+    </div>
+
+    <!-- <div class="update-form-container" *ngIf="showUpdateForm">
+        <form>
+          <label>
+            Nombre:
+            <input type="text" [(ngModel)]="usuario.name" name="name">
+          </label>
+          <label>
+            Username:
+            <input type="text" [(ngModel)]="usuario.username" name="username">
+          </label>
+          <label>
+            Email:
+            <input type="email" [(ngModel)]="usuario.email" name="email">
+          </label>
+          <label>
+            Password:
+            <input type="password" [(ngModel)]="usuario.password" name="password">
+          </label>
+          <button (click)="update_user()">Actualizar</button>
+        </form>
+      </div>
+      
+       -->
+  </div>
+  

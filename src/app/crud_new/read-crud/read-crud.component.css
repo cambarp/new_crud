@@ -1,0 +1,129 @@
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+  
+  .form__update {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .update__input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+  
+  .update__subm {
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  }
+  
+  .update__subm:hover {
+    background-color: #3e8e41;
+  }
+
+  
+  /*data container*/
+
+  .data-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-container p {
+    margin: 5px 0;
+  }
+  
+  .data-container button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .data-container button:hover {
+    background-color: #45a049;
+  }
+
+  /*termina*/
+
+  /*formulario actualizar */
+
+  .update-form-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .update-form-container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .update-form-container label {
+    display: block;
+    width: 45%;
+    margin-bottom: 10px;
+  }
+  
+  .update-form-container input[type="text"],
+  .update-form-container input[type="email"],
+  .update-form-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .update-form-container button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .update-form-container button:hover {
+    background-color: #45a049;
+  }
+
+  
+  
