@@ -46,14 +46,15 @@ export class ServiceCrudService {
     this.stat_new.next(usuarios);
   }
 
-  update_user(usuario: Usuarios):void{
-    const usuarios = this.stat_new.value.map(usuarioActual => {
-      if (usuarioActual.id === usuario.id) {
-        return usuario;
+  update_user(id: number, name: string, username: any, email: any, password: any): void {
+    const usuarios = this.stat_new.value.map((usuario) => {
+      if (usuario.id === id) {
+        return { ...usuario, name, username, email, password };
       } else {
-        return usuarioActual;
+        return usuario;
       }
     });
-    this.stat_new.next(usuarios)
+    this.stat_new.next(usuarios);
   }
+  
 }

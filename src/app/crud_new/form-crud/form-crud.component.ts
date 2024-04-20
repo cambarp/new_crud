@@ -1,10 +1,11 @@
 
-import { Component, OnInit , } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ServiceCrudService } from '../service-crud.service';
 import {FormsModule} from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Usuarios } from '../service-crud.service';
-import { ReadCrudComponent } from '../read-crud/read-crud.component';
+import { ReadCrudComponent  } from '../read-crud/read-crud.component';
+
 
 
 
@@ -24,7 +25,8 @@ export class FormCrudComponent  implements OnInit {
   password=''
 
   usuarios: Usuarios[] = [];
-
+  agregado : boolean = false;
+  ocultar : boolean = true;
   constructor(public service:ServiceCrudService ){
    
   }
@@ -41,6 +43,9 @@ export class FormCrudComponent  implements OnInit {
     this.username=''
     this.email=''
     this.password=''
+
+    this.agregado=true;
+    this.ocultar =false;
     
   }
 
